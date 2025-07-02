@@ -32,7 +32,7 @@
             <td><?php echo htmlspecialchars($data['password']) ?></td>
             <td>
                 <button><a href="useredit.php?id=<?php echo $data['id'] ?>">Edit</a></button>
-                <button>Delete</button>
+                <button><a href="userdel.php?id=<?php echo $data['id'] ?>">Delete</a></button>
             </td>
         </tr>
         <?php } ?>

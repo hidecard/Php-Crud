@@ -13,9 +13,7 @@ if(isset($_POST['update'])){
 
     $sql1 = "UPDATE users SET name='$name',email='$email',password='$password' WHERE id='$id'";
     $res1 = mysqli_query($conn,$sql1);
-    if($res1){
-        echo "Data updated successfully";
-    }
+    header('location:readuser.php');
 }
 
 
